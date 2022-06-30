@@ -106,3 +106,6 @@ def A(x, y):
     :param y: List of output
     :return: alpha + beta * x alpha value in the regression equation
     """
+
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
