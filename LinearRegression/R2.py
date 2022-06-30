@@ -1,6 +1,7 @@
 from Regression.LinearRegression import RegressionParameters as rp
 import numpy as np
 
+
 def R2(x, y):
     """
     It shows the amount of change in the response variables explained by different input values.
@@ -17,3 +18,7 @@ def R2(x, y):
 
     syy = rp.Syy(y)
     ssr = rp.Ssr(x, y)
+
+    R_2 = 1 - ssr / syy
+
+    return R_2
