@@ -8,3 +8,6 @@ def Sxx(x):
     """
     x = np.array(x)
     x = x.reshape(x.size, 1)
+
+    n = x.size
+    sum = 0
