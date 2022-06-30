@@ -17,3 +17,5 @@ def B_Conf_Interval(x, y, alpha):
     x = np.array(x)
     x = x.reshape(x.size, 1)
 
+    y = np.array(y)
+    y = y.reshape(y.size, 1)
