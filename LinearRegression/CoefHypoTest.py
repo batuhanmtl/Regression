@@ -10,3 +10,5 @@ def B_hypot(x, y, beta):
     :param beta : Claimed beta value
     :return : Test statistic with t-distribution calculated with the requested beta value
     """
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
