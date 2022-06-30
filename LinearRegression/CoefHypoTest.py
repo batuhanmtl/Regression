@@ -17,10 +17,10 @@ def B_hypot(x, y, beta):
     y = np.array(y)
     y = y.reshape(y.size, 1)
 
-    B = RegressionParameters.B(x, y)
+    B = B(x, y)
 
-    sxx = RegressionParameters.Sxx(x)
-    ssr = RegressionParameters.Ssr(x, y)
+    sxx = Sxx(x)
+    ssr = Ssr(x, y)
 
     n = x.size
 
@@ -49,9 +49,9 @@ def A_Hypot(x, y, alpha):
     y = np.array(y)
     y = y.reshape(y.size, 1)
 
-    ssr = RegressionParameters.Ssr(x, y)
+    ssr = Ssr(x, y)
 
-    A = RegressionParameters.A(x, y)
+    A = A(x, y)
 
     n = x.size
 
@@ -77,9 +77,9 @@ def Alpha_BetaX0_Hypot(x, y, x_0):
     y = np.array(y)
     y = y.reshape(y.size, 1)
 
-    sxx = RegressionParameters.Sxx(x)
+    sxx = Sxx(x)
 
-    ssr = RegressionParameters.Ssr(x, y)
+    ssr = Ssr(x, y)
 
     n = x.size
 
