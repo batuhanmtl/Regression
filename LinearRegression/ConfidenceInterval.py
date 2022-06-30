@@ -109,3 +109,16 @@ def Alpha_BetaX0_Conf_Interval(x, y, x0, alpha):
         interval[1] = limit_1
 
     return interval
+
+def X0_Conf_Interval(x, y, x0, alpha):
+    """
+    Prediction range for future response.
+
+    Based on Yi response values corresponding to xi input value Y response prediction interval for
+     Xo input level.
+    :param x0: Input level
+    :param x: List of input levels
+    :param y: List of output
+    :param alpha:  significance level
+    :return: Estimation range for response at xo input level
+    """
