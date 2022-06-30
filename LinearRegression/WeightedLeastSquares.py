@@ -9,3 +9,6 @@ def Weighted_Squares(x, y):
     :param y: List of output
     :return: Alpha and beta values, which are the coefficients of the weighted linear regression equation.
     """
+
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
