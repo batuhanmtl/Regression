@@ -6,3 +6,5 @@ def Sxx(x):
     :param x: List of input levels
     :return: Sxx value
     """
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
