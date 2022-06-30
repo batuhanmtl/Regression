@@ -4,6 +4,7 @@ from Regression.LinearRegression.CoefHypoTest import *
 import math as mt
 import numpy as np
 
+
 def B_Conf_Interval(x, y, alpha):
     """
     Confidence interval estimator for beta
@@ -35,6 +36,7 @@ def B_Conf_Interval(x, y, alpha):
         interval[1] = limit_1
 
     return interval
+
 
 def A_Conf_Interval(x, y, alpha):
     """
@@ -71,6 +73,7 @@ def A_Conf_Interval(x, y, alpha):
 
     return interval
 
+
 def Alpha_BetaX0_Conf_Interval(x, y, x0, alpha):
     """
     Confidence interval estimator for A+BX0
@@ -98,3 +101,11 @@ def Alpha_BetaX0_Conf_Interval(x, y, x0, alpha):
 
     limit_1 = A_BX0 - Test_Stat * T_table_value
     limit_2 = A_BX0 + Test_Stat * T_table_value
+
+    interval = [limit_1, limit_2]
+
+    if limit_1 > limit_2:
+        interval[0] = limit_2
+        interval[1] = limit_1
+
+    return interval
