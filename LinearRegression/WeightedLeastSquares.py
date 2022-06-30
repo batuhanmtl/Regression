@@ -34,3 +34,6 @@ def Weighted_Squares(x, y):
 
     for i in range(0, n):
         sum_WiYi += W_i[i, 0] * y[i, 0]
+
+    A = np.array([[sum_Wi, n], [n, sum_Xi]])  # linear equation system coefficients (Ax=b --> A)
+    b = np.array([[sum_WiYi], [sum_Yi]])  # linear equation system result vector (Ax=b --> b)
