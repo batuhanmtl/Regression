@@ -128,3 +128,6 @@ def X0_Conf_Interval(x, y, x0, alpha):
 
     y = np.array(y)
     y = y.reshape(y.size, 1)
+
+    sxx = rp.Sxx(x)
+    ssr = rp.Ssr(x, y)
