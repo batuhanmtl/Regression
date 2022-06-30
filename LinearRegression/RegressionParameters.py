@@ -26,3 +26,6 @@ def Syy(y):
 
     y = np.array(y)
     y = y.reshape(y.size, 1)
+
+    n = y.size
+    sum = 0
