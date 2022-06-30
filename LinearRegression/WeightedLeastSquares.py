@@ -15,3 +15,7 @@ def Weighted_Squares(x, y):
 
     y = np.array(y)
     y = y.reshape(y.size, 1)
+
+    n = x.size
+
+    W_i = []
