@@ -83,3 +83,6 @@ def Alpha_BetaX0_Conf_Interval(x, y, x0, alpha):
 
     x = np.array(x)
     x = x.reshape(x.size, 1)
+
+    y = np.array(y)
+    y = y.reshape(y.size, 1)
