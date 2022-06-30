@@ -23,3 +23,6 @@ def Syy(y):
     :param y: List of output
     :return: Syy value
     """
+
+    y = np.array(y)
+    y = y.reshape(y.size, 1)
