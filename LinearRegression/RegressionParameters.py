@@ -68,3 +68,6 @@ def Ssr(x, y):
     :param y: List of output:
     :return: SSr Value
     """
+
+    sxx = Sxx(x)
+    syy = Syy(y)
