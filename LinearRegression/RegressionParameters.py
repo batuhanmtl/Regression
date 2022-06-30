@@ -11,3 +11,8 @@ def Sxx(x):
 
     n = x.size
     sum = 0
+
+    for i in range(0, n):
+        sum += x[i, 0] ** 2
+    result = sum - n * np.mean(x) ** 2
+    return result
