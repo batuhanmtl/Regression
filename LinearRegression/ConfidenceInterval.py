@@ -139,3 +139,6 @@ def X0_Conf_Interval(x, y, x0, alpha):
     A_BX0 = A + B * x0
 
     T_table_value = t.ppf(q=alpha / 2, df=n - 2)
+
+    limit_1 = A_BX0 - mt.sqrt((((n + 1) / n) + (x0 - np.mean(x)) ** 2 / sxx) * (ssr / (n - 2))) * T_table_value
+    limit_2 = A_BX0 + mt.sqrt((((n + 1) / n) + (x0 - np.mean(x)) ** 2 / sxx) * (ssr / (n - 2))) * T_table_value
