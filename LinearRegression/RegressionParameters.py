@@ -78,6 +78,7 @@ def Ssr(x, y):
 
     return result
 
+
 def B(x, y):
     """
     Estimator of beta in alpha + beta*x regression equation
@@ -92,3 +93,8 @@ def B(x, y):
 
     y = np.array(y)
     y = y.reshape(y.size, 1)
+
+    sxy = Sxy(x, y)
+    sxx = Sxx(x)
+
+    return sxy / sxx
