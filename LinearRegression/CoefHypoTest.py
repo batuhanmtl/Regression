@@ -31,3 +31,12 @@ def B_hypot(x, y, beta):
         TS = mt.sqrt((n - 2) * sxx / ssr) * (B - beta)
 
         return TS
+
+def A_Hypot(x, y, alpha):
+    """
+    Test Statistics for alpha
+    :param x: List of input levels
+    :param y: List of output
+    :param alpha : Claimed alpha value
+    :return : Test statistic with the t-distribution calculated with the desired alpha value
+    """
