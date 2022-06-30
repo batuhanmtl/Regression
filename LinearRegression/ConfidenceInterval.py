@@ -70,3 +70,13 @@ def A_Conf_Interval(x, y, alpha):
         interval[1] = limit_1
 
     return interval
+
+def Alpha_BetaX0_Conf_Interval(x, y, x0, alpha):
+    """
+    Confidence interval estimator for A+BX0
+    :param x: List of input levels
+    :param y: List of output
+    :param x0: Confidence interval desired input level
+    :param alpha: significance level
+    :return: Confidence interval for A+BX0
+    """
