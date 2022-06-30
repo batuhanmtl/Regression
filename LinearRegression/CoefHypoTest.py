@@ -77,3 +77,9 @@ def Alpha_BetaX0_Hypot(x, y, x_0):
     sxx = RegressionParameters.Sxx(x)
 
     ssr = RegressionParameters.Ssr(x, y)
+
+    n = x.size
+
+    TS = math.sqrt((1 / n) + ((x_0 - np.mean(x)) ** 2) / sxx) * math.sqrt(ssr / (x.size - 2))
+
+    return TS
