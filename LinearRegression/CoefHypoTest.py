@@ -70,3 +70,6 @@ def Alpha_BetaX0_Hypot(x, y, x_0):
 
     x = np.array(x)
     x = x.reshape(x.size, 1)
+
+    y = np.array(y)
+    y = y.reshape(y.size, 1)
