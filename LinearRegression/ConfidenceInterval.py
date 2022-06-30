@@ -142,3 +142,11 @@ def X0_Conf_Interval(x, y, x0, alpha):
 
     limit_1 = A_BX0 - mt.sqrt((((n + 1) / n) + (x0 - np.mean(x)) ** 2 / sxx) * (ssr / (n - 2))) * T_table_value
     limit_2 = A_BX0 + mt.sqrt((((n + 1) / n) + (x0 - np.mean(x)) ** 2 / sxx) * (ssr / (n - 2))) * T_table_value
+
+    interval = [limit_1, limit_2]
+
+    if limit_1 > limit_2:
+        interval[0] = limit_2
+        interval[1] = limit_1
+
+    return interval
