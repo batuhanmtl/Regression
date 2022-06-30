@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def Sxx(x):
     """
     Sum of squares of residualsç
@@ -16,6 +17,7 @@ def Sxx(x):
         sum += x[i, 0] ** 2
     result = sum - n * np.mean(x) ** 2
     return result
+
 
 def Syy(y):
     """
@@ -36,6 +38,7 @@ def Syy(y):
 
     return result
 
+
 def Sxy(x, y):
     """
 
@@ -51,3 +54,9 @@ def Sxy(x, y):
 
     n = x.size
     sum = 0
+
+    for i in range(0, n):
+        sum += x[i, 0] * y[i, 0]
+    result = sum - n * np.mean(x) * np.mean(y)
+
+    return result
