@@ -131,3 +131,7 @@ def X0_Conf_Interval(x, y, x0, alpha):
 
     sxx = rp.Sxx(x)
     ssr = rp.Ssr(x, y)
+
+    n = x.size
+
+    A, B = rp.A(x, y), rp.B(x, y)
