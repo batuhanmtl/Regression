@@ -61,3 +61,6 @@ def A_Conf_Interval(x, y, alpha):
 
     for i in range(0, n):
         sum += x[i, 0] ** 2
+
+    limit_1 = rp.A(x, y) - mt.sqrt(sum * ssr / (n * (n - 2) * sxx)) * T_table_value
+    limit_2 = rp.A(x, y) + mt.sqrt(sum * ssr / (n * (n - 2) * sxx)) * T_table_value
