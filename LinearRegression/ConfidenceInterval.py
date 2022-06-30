@@ -64,3 +64,9 @@ def A_Conf_Interval(x, y, alpha):
 
     limit_1 = rp.A(x, y) - mt.sqrt(sum * ssr / (n * (n - 2) * sxx)) * T_table_value
     limit_2 = rp.A(x, y) + mt.sqrt(sum * ssr / (n * (n - 2) * sxx)) * T_table_value
+
+    if limit_1 > limit_2:
+        interval[0] = limit_2
+        interval[1] = limit_1
+
+    return interval
