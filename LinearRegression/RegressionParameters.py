@@ -43,3 +43,5 @@ def Sxy(x, y):
     :param y: List of output
     :return: Sxy value
     """
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
