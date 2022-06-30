@@ -11,3 +11,6 @@ def R2(x, y):
 
     x = np.array(x)
     x = x.reshape(x.size, 1)
+
+    y = np.array(y)
+    y = y.reshape(y.size, 1)
