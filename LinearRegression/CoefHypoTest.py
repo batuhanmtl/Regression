@@ -27,3 +27,7 @@ def B_hypot(x, y, beta):
         TS = mt.sqrt((n - 2) * sxx / ssr) * abs(B)
 
         return TS
+    else:
+        TS = mt.sqrt((n - 2) * sxx / ssr) * (B - beta)
+
+        return TS
