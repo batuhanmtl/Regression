@@ -2,6 +2,7 @@ import math
 from Regression.LinearRegression import RegressionParameters
 import numpy as np
 
+
 def B_hypot(x, y, beta):
     """
     Test Statistics for B
@@ -32,6 +33,7 @@ def B_hypot(x, y, beta):
 
         return TS
 
+
 def A_Hypot(x, y, alpha):
     """
     Test Statistics for alpha
@@ -56,6 +58,7 @@ def A_Hypot(x, y, alpha):
     TS = math.sqrt(n * (n - 2) * ssr / (np.sum(x * x) * ssr)) * (A - alpha)
 
     return TS
+
 
 def Alpha_BetaX0_Hypot(x, y, x_0):
     """
