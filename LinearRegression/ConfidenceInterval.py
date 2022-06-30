@@ -29,3 +29,9 @@ def B_Conf_Interval(x, y, alpha):
     limit_2 = rp.B(x, y) + mt.sqrt(ssr / ((n - 2) * sxx)) * t.ppf(q=alpha / 2, df=n - 2)
 
     interval = [limit_1, limit_2]
+
+    if limit_1 > limit_2:
+        interval[0] = limit_2
+        interval[1] = limit_1
+
+    return interval
