@@ -8,3 +8,6 @@ def R2(x, y):
     :param y: List of output
     :return: Rate of change in response variables
     """
+
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
