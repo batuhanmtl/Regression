@@ -22,3 +22,5 @@ def B_Conf_Interval(x, y, alpha):
 
     sxx = rp.Sxx(x)
     ssr = rp.Ssr(x, y)
+
+    n = x.size
