@@ -1,6 +1,7 @@
 from scipy import linalg
 import numpy as np
 
+
 def Weighted_Squares(x, y):
     """
     A function that allows us to obtain the alpha and beta values,
