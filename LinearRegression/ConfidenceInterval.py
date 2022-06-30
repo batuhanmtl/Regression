@@ -52,3 +52,9 @@ def A_Conf_Interval(x, y, alpha):
 
     sxx = rp.Sxx(x)
     ssr = rp.Ssr(x, y)
+
+    n = x.size
+
+    T_table_value = t.ppf(q=alpha / 2, df=n - 2)
+
+    sum = 0
