@@ -56,3 +56,14 @@ def A_Hypot(x, y, alpha):
     TS = math.sqrt(n * (n - 2) * ssr / (np.sum(x * x) * ssr)) * (A - alpha)
 
     return TS
+
+def Alpha_BetaX0_Hypot(x, y, x_0):
+    """
+    Test Statistics for alpha + beta*(X_0)
+    :param x: List of input levels
+    :param y: List of output levels
+    :param x_0: Input level at which hypothesis testing will be done
+
+    :return: A test statistic value with a t-distribution calculated
+    with the input level at which the hypothesis will be tested.
+    """
