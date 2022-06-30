@@ -60,3 +60,11 @@ def Sxy(x, y):
     result = sum - n * np.mean(x) * np.mean(y)
 
     return result
+
+def Ssr(x, y):
+    """
+
+    :param x: List of input levels
+    :param y: List of output:
+    :return: SSr Value
+    """
