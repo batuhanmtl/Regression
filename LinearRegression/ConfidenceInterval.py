@@ -35,3 +35,12 @@ def B_Conf_Interval(x, y, alpha):
         interval[1] = limit_1
 
     return interval
+
+def A_Conf_Interval(x, y, alpha):
+    """
+    Confidence interval estimator for A
+    :param x: List of input levels
+    :param y: List of output
+    :param alpha: significance level
+    :return: Confidence interval for A
+    """
