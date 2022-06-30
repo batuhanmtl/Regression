@@ -49,3 +49,6 @@ def A_Conf_Interval(x, y, alpha):
 
     y = np.array(y)
     y = y.reshape(y.size, 1)
+
+    sxx = rp.Sxx(x)
+    ssr = rp.Ssr(x, y)
