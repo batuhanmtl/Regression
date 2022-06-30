@@ -28,3 +28,6 @@ def Weighted_Squares(x, y):
 
     sum_WiYi = 0
     sum_Xi = np.sum(x)
+
+    sum_Yi = np.sum(y)
+    sum_Wi = np.sum(W_i)
