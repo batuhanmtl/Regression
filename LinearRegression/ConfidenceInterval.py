@@ -135,3 +135,7 @@ def X0_Conf_Interval(x, y, x0, alpha):
     n = x.size
 
     A, B = rp.A(x, y), rp.B(x, y)
+
+    A_BX0 = A + B * x0
+
+    T_table_value = t.ppf(q=alpha / 2, df=n - 2)
