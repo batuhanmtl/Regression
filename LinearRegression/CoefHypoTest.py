@@ -15,3 +15,8 @@ def B_hypot(x, y, beta):
 
     y = np.array(y)
     y = y.reshape(y.size, 1)
+
+    B = RegressionParameters.B(x, y)
+
+    sxx = RegressionParameters.Sxx(x)
+    ssr = RegressionParameters.Ssr(x, y)
