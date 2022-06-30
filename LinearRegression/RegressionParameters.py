@@ -35,3 +35,11 @@ def Syy(y):
     result = sum - n * np.mean(y) ** 2
 
     return result
+
+def Sxy(x, y):
+    """
+
+    :param x: List of input levels
+    :param y: List of output
+    :return: Sxy value
+    """
