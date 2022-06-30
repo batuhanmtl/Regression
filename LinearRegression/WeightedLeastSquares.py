@@ -22,3 +22,6 @@ def Weighted_Squares(x, y):
 
     for i in range(0, n):
         W_i.append(1 / x[i, 0])
+
+    W_i = np.array(W_i)
+    W_i = W_i.reshape(W_i.size, 1)
