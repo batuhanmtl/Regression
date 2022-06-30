@@ -99,6 +99,7 @@ def B(x, y):
 
     return sxy / sxx
 
+
 def A(x, y):
     """
     Estimator of alpha value in alpha + beta*x regression equation
