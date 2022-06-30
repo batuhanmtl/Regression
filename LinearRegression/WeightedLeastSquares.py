@@ -37,3 +37,6 @@ def Weighted_Squares(x, y):
 
     A = np.array([[sum_Wi, n], [n, sum_Xi]])  # linear equation system coefficients (Ax=b --> A)
     b = np.array([[sum_WiYi], [sum_Yi]])  # linear equation system result vector (Ax=b --> b)
+
+    result = linalg.solve(A, b)
+    print(f"alpha = {result[0, 0]} , beta = {result[1, 0]} ")
