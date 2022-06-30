@@ -16,3 +16,10 @@ def Sxx(x):
         sum += x[i, 0] ** 2
     result = sum - n * np.mean(x) ** 2
     return result
+
+def Syy(y):
+    """
+
+    :param y: List of output
+    :return: Syy value
+    """
