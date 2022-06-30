@@ -77,3 +77,12 @@ def Ssr(x, y):
     result = (sxx * syy - sxy ** 2) / sxx
 
     return result
+
+def B(x, y):
+    """
+    Estimator of beta in alpha + beta*x regression equation
+
+    :param x: List of input levels
+    :param y: List of output
+    :return: The beta value in the alpha + beta*x regression equation
+    """
