@@ -110,6 +110,7 @@ def Alpha_BetaX0_Conf_Interval(x, y, x0, alpha):
 
     return interval
 
+
 def X0_Conf_Interval(x, y, x0, alpha):
     """
     Prediction range for future response.
