@@ -40,3 +40,9 @@ def A_Hypot(x, y, alpha):
     :param alpha : Claimed alpha value
     :return : Test statistic with the t-distribution calculated with the desired alpha value
     """
+
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
+
+    y = np.array(y)
+    y = y.reshape(y.size, 1)
