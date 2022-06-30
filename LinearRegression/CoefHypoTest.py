@@ -50,3 +50,7 @@ def A_Hypot(x, y, alpha):
     ssr = RegressionParameters.Ssr(x, y)
 
     A = RegressionParameters.A(x, y)
+
+    n = x.size
+
+    TS = math.sqrt(n * (n - 2) * ssr / (np.sum(x * x) * ssr)) * (A - alpha)
