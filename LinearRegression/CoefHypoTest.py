@@ -46,3 +46,7 @@ def A_Hypot(x, y, alpha):
 
     y = np.array(y)
     y = y.reshape(y.size, 1)
+
+    ssr = RegressionParameters.Ssr(x, y)
+
+    A = RegressionParameters.A(x, y)
