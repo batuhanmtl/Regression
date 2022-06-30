@@ -91,3 +91,7 @@ def Alpha_BetaX0_Conf_Interval(x, y, x0, alpha):
 
     A, B = rp.A(x, y), rp.B(x, y)
     A_BX0 = A + B * x0
+
+    T_table_value = t.ppf(q=alpha / 2, df=n - 2)
+
+    Test_Stat = Alpha_BetaX0_Hypot(x, y, x0)
