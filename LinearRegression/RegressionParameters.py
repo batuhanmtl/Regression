@@ -48,3 +48,6 @@ def Sxy(x, y):
 
     y = np.array(y)
     y = y.reshape(y.size, 1)
+
+    n = x.size
+    sum = 0
