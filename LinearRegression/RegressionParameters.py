@@ -61,6 +61,7 @@ def Sxy(x, y):
 
     return result
 
+
 def Ssr(x, y):
     """
 
@@ -71,3 +72,8 @@ def Ssr(x, y):
 
     sxx = Sxx(x)
     syy = Syy(y)
+    sxy = Sxy(x, y)
+
+    result = (sxx * syy - sxy ** 2) / sxx
+
+    return result
