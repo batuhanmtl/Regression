@@ -98,3 +98,11 @@ def B(x, y):
     sxx = Sxx(x)
 
     return sxy / sxx
+
+def A(x, y):
+    """
+    Estimator of alpha value in alpha + beta*x regression equation
+    :param x: List of input levels
+    :param y: List of output
+    :return: alpha + beta * x alpha value in the regression equation
+    """
