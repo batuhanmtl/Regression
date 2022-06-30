@@ -88,3 +88,6 @@ def Alpha_BetaX0_Conf_Interval(x, y, x0, alpha):
     y = y.reshape(y.size, 1)
 
     n = x.size
+
+    A, B = rp.A(x, y), rp.B(x, y)
+    A_BX0 = A + B * x0
