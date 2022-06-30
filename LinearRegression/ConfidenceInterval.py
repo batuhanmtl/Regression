@@ -13,3 +13,7 @@ def B_Conf_Interval(x, y, alpha):
     :param alpha: significance level
     :return: Confidence interval for beta
     """
+
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
+
