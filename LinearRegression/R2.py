@@ -14,3 +14,6 @@ def R2(x, y):
 
     y = np.array(y)
     y = y.reshape(y.size, 1)
+
+    syy = rp.Syy(y)
+    ssr = rp.Ssr(x, y)
