@@ -67,3 +67,6 @@ def Alpha_BetaX0_Hypot(x, y, x_0):
     :return: A test statistic value with a t-distribution calculated
     with the input level at which the hypothesis will be tested.
     """
+
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
