@@ -1,6 +1,6 @@
 from scipy.stats import t  # for Values of critical points in T_table
-from Regression.LinearRegression import RegressionParameters as rp
-from Regression.LinearRegression.CoefHypoTest import *
+from RegressionParameters import *
+from CoefHypoTest import *
 import math as mt
 import numpy as np
 
@@ -21,13 +21,14 @@ def B_Conf_Interval(x, y, alpha):
     y = np.array(y)
     y = y.reshape(y.size, 1)
 
-    sxx = rp.Sxx(x)
-    ssr = rp.Ssr(x, y)
+    sxx = Sxx(x)
+    ssr = Ssr(x, y)
 
     n = x.size
 
-    limit_1 = rp.B(x, y) - mt.sqrt(ssr / ((n - 2) * sxx)) * t.ppf(q=alpha / 2, df=n - 2)
-    limit_2 = rp.B(x, y) + mt.sqrt(ssr / ((n - 2) * sxx)) * t.ppf(q=alpha / 2, df=n - 2)
+    limit_1 = B(x, y) - mt.sqrt(ssr / ((n - 2) * sxx)) * t.ppf(q=alpha / 2, df=n - 2)
+    limit_2 = B(x, y) + mt.sqrt(ssr / ((n - 2) * sxx)) * t.ppf(q=alpha / 2, df=n - 2)
+
 
     interval = [limit_1, limit_2]
 
@@ -52,8 +53,8 @@ def A_Conf_Interval(x, y, alpha):
     y = np.array(y)
     y = y.reshape(y.size, 1)
 
-    sxx = rp.Sxx(x)
-    ssr = rp.Ssr(x, y)
+    sxx = Sxx(x)
+    ssr = Ssr(x, y)
 
     n = x.size
 
@@ -64,8 +65,8 @@ def A_Conf_Interval(x, y, alpha):
     for i in range(0, n):
         sum += x[i, 0] ** 2
 
-    limit_1 = rp.A(x, y) - mt.sqrt(sum * ssr / (n * (n - 2) * sxx)) * T_table_value
-    limit_2 = rp.A(x, y) + mt.sqrt(sum * ssr / (n * (n - 2) * sxx)) * T_table_value
+    limit_1 = A(x, y) - mt.sqrt(sum * ssr / (n * (n - 2) * sxx)) * T_table_value
+    limit_2 = A(x, y) + mt.sqrt(sum * ssr / (n * (n - 2) * sxx)) * T_table_value
 
     if limit_1 > limit_2:
         interval[0] = limit_2
@@ -92,8 +93,8 @@ def Alpha_BetaX0_Conf_Interval(x, y, x0, alpha):
 
     n = x.size
 
-    A, B = rp.A(x, y), rp.B(x, y)
-    A_BX0 = A + B * x0
+    a, b = A(x, y), B(x, y)
+    A_BX0 = a + b * x0
 
     T_table_value = t.ppf(q=alpha / 2, df=n - 2)
 
@@ -130,14 +131,14 @@ def X0_Conf_Interval(x, y, x0, alpha):
     y = np.array(y)
     y = y.reshape(y.size, 1)
 
-    sxx = rp.Sxx(x)
-    ssr = rp.Ssr(x, y)
+    sxx = Sxx(x)
+    ssr = Ssr(x, y)
 
     n = x.size
 
-    A, B = rp.A(x, y), rp.B(x, y)
+    a, b = A(x, y), B(x, y)
 
-    A_BX0 = A + B * x0
+    A_BX0 = a + b * x0
 
     T_table_value = t.ppf(q=alpha / 2, df=n - 2)
 
