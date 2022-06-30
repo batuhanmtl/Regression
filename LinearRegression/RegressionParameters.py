@@ -33,3 +33,5 @@ def Syy(y):
     for i in range(0, n):
         sum += y[i, 0] ** 2
     result = sum - n * np.mean(y) ** 2
+
+    return result
