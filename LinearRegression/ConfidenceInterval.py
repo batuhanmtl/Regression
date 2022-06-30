@@ -80,3 +80,6 @@ def Alpha_BetaX0_Conf_Interval(x, y, x0, alpha):
     :param alpha: significance level
     :return: Confidence interval for A+BX0
     """
+
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
