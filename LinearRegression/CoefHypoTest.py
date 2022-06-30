@@ -73,3 +73,7 @@ def Alpha_BetaX0_Hypot(x, y, x_0):
 
     y = np.array(y)
     y = y.reshape(y.size, 1)
+
+    sxx = RegressionParameters.Sxx(x)
+
+    ssr = RegressionParameters.Ssr(x, y)
