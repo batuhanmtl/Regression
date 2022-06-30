@@ -19,3 +19,6 @@ def Weighted_Squares(x, y):
     n = x.size
 
     W_i = []
+
+    for i in range(0, n):
+        W_i.append(1 / x[i, 0])
