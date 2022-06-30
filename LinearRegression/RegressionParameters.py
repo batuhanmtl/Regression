@@ -86,3 +86,7 @@ def B(x, y):
     :param y: List of output
     :return: The beta value in the alpha + beta*x regression equation
     """
+
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
+
