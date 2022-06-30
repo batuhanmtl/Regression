@@ -1,5 +1,5 @@
 import math
-from RegressionParameters import *
+from LinearRegression.RegressionParameters import *
 import numpy as np
 
 

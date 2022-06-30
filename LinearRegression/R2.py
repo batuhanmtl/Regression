@@ -1,4 +1,4 @@
-from LinearRegression import RegressionParameters as rp
+from LinearRegression.RegressionParameters import *
 import numpy as np
 
 
@@ -16,8 +16,8 @@ def R2(x, y):
     y = np.array(y)
     y = y.reshape(y.size, 1)
 
-    syy = rp.Syy(y)
-    ssr = rp.Ssr(x, y)
+    syy = Syy(y)
+    ssr = Ssr(x, y)
 
     R_2 = 1 - ssr / syy
 
