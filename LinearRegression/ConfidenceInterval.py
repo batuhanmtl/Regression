@@ -122,3 +122,6 @@ def X0_Conf_Interval(x, y, x0, alpha):
     :param alpha:  significance level
     :return: Estimation range for response at xo input level
     """
+
+    x = np.array(x)
+    x = x.reshape(x.size, 1)
