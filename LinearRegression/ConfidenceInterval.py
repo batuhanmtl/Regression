@@ -58,3 +58,6 @@ def A_Conf_Interval(x, y, alpha):
     T_table_value = t.ppf(q=alpha / 2, df=n - 2)
 
     sum = 0
+
+    for i in range(0, n):
+        sum += x[i, 0] ** 2
