@@ -114,6 +114,6 @@ def A(x, y):
     y = np.array(y)
     y = y.reshape(y.size, 1)
 
-    A = np.mean(y) - B(x, y) * np.mean(x)
+    a = np.mean(y) - B(x, y) * np.mean(x)
 
-    return A
+    return a
