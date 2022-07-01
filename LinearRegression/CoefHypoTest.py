@@ -1,4 +1,4 @@
-import math
+import math as mt
 from LinearRegression.RegressionParameters import *
 import numpy as np
 
@@ -17,7 +17,7 @@ def B_hypot(x, y, beta):
     y = np.array(y)
     y = y.reshape(y.size, 1)
 
-    B = B(x, y)
+    b = B(x, y)
 
     sxx = Sxx(x)
     ssr = Ssr(x, y)
@@ -25,11 +25,11 @@ def B_hypot(x, y, beta):
     n = x.size
 
     if beta == 0:
-        TS = mt.sqrt((n - 2) * sxx / ssr) * abs(B)
+        TS = mt.sqrt((n - 2) * sxx / ssr) * abs(b)
 
         return TS
     else:
-        TS = mt.sqrt((n - 2) * sxx / ssr) * (B - beta)
+        TS = mt.sqrt((n - 2) * sxx / ssr) * (b - beta)
 
         return TS
 
@@ -51,11 +51,11 @@ def A_Hypot(x, y, alpha):
 
     ssr = Ssr(x, y)
 
-    A = A(x, y)
+    a = A(x, y)
 
     n = x.size
 
-    TS = math.sqrt(n * (n - 2) * ssr / (np.sum(x * x) * ssr)) * (A - alpha)
+    TS = mt.sqrt(n * (n - 2) * ssr / (np.sum(x * x) * ssr)) * (a - alpha)
 
     return TS
 
@@ -83,6 +83,6 @@ def Alpha_BetaX0_Hypot(x, y, x_0):
 
     n = x.size
 
-    TS = math.sqrt((1 / n) + ((x_0 - np.mean(x)) ** 2) / sxx) * math.sqrt(ssr / (x.size - 2))
+    TS = mt.sqrt((1 / n) + ((x_0 - np.mean(x)) ** 2) / sxx) * mt.sqrt(ssr / (x.size - 2))
 
     return TS
