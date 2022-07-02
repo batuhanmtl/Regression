@@ -1,4 +1,4 @@
-from LinearRegression.RegressionParameters import *
+from RegressionParameters import *
 import numpy as np
 
 
