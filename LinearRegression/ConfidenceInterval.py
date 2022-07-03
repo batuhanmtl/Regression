@@ -1,6 +1,6 @@
 from scipy.stats import t  # for Values of critical points in T_table
-from RegressionParameters import *
-from CoefHypoTest import *
+from LinearRegression.RegressionParameters import *
+from LinearRegression.CoefHypoTest import *
 import math as mt
 import numpy as np
 
