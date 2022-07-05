@@ -48,3 +48,5 @@ def Multiple_Regression(data, x_cols_name=None, y_col=''):
     B = np.dot(dot_1_inv, dot_2)  # beta coefficients matrix
 
     return B
+
+def Multiple_SSr(data, x_cols_name=None, y_col=''):
