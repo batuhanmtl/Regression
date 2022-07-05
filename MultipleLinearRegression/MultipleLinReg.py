@@ -15,3 +15,8 @@ def Multiple_Regression(data, x_cols_name=None, y_col=''):
 
     if x_cols_name is None:
         x_cols_name = []
+
+    ones = []
+    for i in range(len(data)):
+        ones.append(1.0)
+    ones = np.array(ones)
