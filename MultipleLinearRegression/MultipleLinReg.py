@@ -201,3 +201,4 @@ def Multiple_R2(data, x_cols_name=None, y_col=''):
 
     Y = np.array(Y)
 
+    Y = Y.reshape(len(data), 1)
