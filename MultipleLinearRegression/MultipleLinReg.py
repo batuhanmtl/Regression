@@ -202,3 +202,5 @@ def Multiple_R2(data, x_cols_name=None, y_col=''):
     Y = np.array(Y)
 
     Y = Y.reshape(len(data), 1)
+
+    ssr = Multiple_SSr(data=data, x_cols_name=x_cols_name, y_col=y_col)
