@@ -199,3 +199,5 @@ def Multiple_R2(data, x_cols_name=None, y_col=''):
     """
     Y = data[y_col].values
 
+    Y = np.array(Y)
+
