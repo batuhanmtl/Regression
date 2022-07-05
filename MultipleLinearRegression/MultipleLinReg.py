@@ -206,3 +206,5 @@ def Multiple_R2(data, x_cols_name=None, y_col=''):
     ssr = Multiple_SSr(data=data, x_cols_name=x_cols_name, y_col=y_col)
 
     mean_Y = Y.mean()
+
+    sum = 0
