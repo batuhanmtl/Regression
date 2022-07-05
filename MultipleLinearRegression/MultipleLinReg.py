@@ -95,3 +95,5 @@ def Multiple_SSr(data, x_cols_name=None, y_col=''):
     dot_2 = B_trans.dot(X_trans).dot(Y)
 
     ssr = dot_1 - dot_2  # Y'Y - B'X'Y
+
+    return ssr[0, 0]
