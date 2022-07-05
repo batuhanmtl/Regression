@@ -86,3 +86,5 @@ def Multiple_SSr(data, x_cols_name=None, y_col=''):
     Y = data[y_col].values
     Y = np.array(Y)
     Y = Y.reshape(len(data), 1)
+
+    Y_trans = Y.transpose()
