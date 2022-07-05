@@ -88,3 +88,5 @@ def Multiple_SSr(data, x_cols_name=None, y_col=''):
     Y = Y.reshape(len(data), 1)
 
     Y_trans = Y.transpose()
+
+    B_trans = Multiple_Regression(data, x_cols_name=x_cols_name, y_col=y_col).transpose()
