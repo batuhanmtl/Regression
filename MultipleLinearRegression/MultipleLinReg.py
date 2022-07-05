@@ -172,3 +172,5 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
 
     ssr = Multiple_SSr(data=data, x_cols_name=x_cols_name, y_col=y_col)
 
+    n, k = len(data), len(x_cols_name)
+
