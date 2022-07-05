@@ -113,4 +113,7 @@ def Variance_Estimator(data, x_cols_name=None, y_col=''):
 
     k = len(x_cols_name)  # number of non-dependent variables
 
+    variance_est = ssr / (n - k - 1)  # Variance estimator value
+
+
 
