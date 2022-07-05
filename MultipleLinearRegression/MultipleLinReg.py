@@ -208,3 +208,6 @@ def Multiple_R2(data, x_cols_name=None, y_col=''):
     mean_Y = Y.mean()
 
     sum = 0
+
+    for i in range(len(data)):
+        sum = sum + (Y[i, 0] - mean_Y) ** 2
