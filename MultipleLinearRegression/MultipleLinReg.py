@@ -176,3 +176,5 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
 
     test_stat = sqrt(n - k - 1) * (B_i - beta) / (sqrt(index_x) * sqrt(ssr))
 
+    t_table = t.ppf(q=alpha / 2, df=n - k - 1)
+
