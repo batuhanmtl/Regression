@@ -97,3 +97,6 @@ def Multiple_SSr(data, x_cols_name=None, y_col=''):
     ssr = dot_1 - dot_2  # Y'Y - B'X'Y
 
     return ssr[0, 0]
+
+def Variance_Estimator(data, x_cols_name=None, y_col=''):
+
