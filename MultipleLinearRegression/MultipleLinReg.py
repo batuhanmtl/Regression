@@ -117,6 +117,15 @@ def Variance_Estimator(data, x_cols_name=None, y_col=''):
 
     return variance_est
 
+
 def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_col=''):
-
-
+    """
+    The function that calculates the hypothesis test according to the desired value of the beta coefficient
+    :param alpha: Significance level
+    :param variable_name: The name of the variable affected by the coefficient to be tested for the hypothesis
+    :param beta: The value of beta at which hypothesis testing is desired
+    :param data: must be a data frame
+    :param x_cols_name: must be a list with column names of non-dependent Variables.
+    :param y_col: column name of the dependent variable
+    :return: Test statistic value (float) and T-table value(float)
+    """
