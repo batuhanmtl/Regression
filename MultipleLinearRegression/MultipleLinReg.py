@@ -49,4 +49,12 @@ def Multiple_Regression(data, x_cols_name=None, y_col=''):
 
     return B
 
+
 def Multiple_SSr(data, x_cols_name=None, y_col=''):
+    """
+    Function that calculates the sum of squares of residuals
+    :param data: must be a data frame
+    :param x_cols_name: must be a list with column names of non-dependent Variables.
+    :param y_col: column name of the dependent variable
+    :return: numpy.float SSr -the sum of squares of residuals-
+    """
