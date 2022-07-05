@@ -213,3 +213,5 @@ def Multiple_R2(data, x_cols_name=None, y_col=''):
         sum = sum + (Y[i, 0] - mean_Y) ** 2
 
     R2 = 1 - (ssr / sum)
+
+    return R2
