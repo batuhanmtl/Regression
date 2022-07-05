@@ -180,3 +180,6 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
 
     print(f'test-stat={test_stat} t-table={t_table}')
 
+    if abs(t_table) > abs(test_stat):
+        print("## H_0 hypothesis can be accepted ##")
+
