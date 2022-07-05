@@ -174,3 +174,5 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
 
     n, k = len(data), len(x_cols_name)
 
+    test_stat = sqrt(n - k - 1) * (B_i - beta) / (sqrt(index_x) * sqrt(ssr))
+
