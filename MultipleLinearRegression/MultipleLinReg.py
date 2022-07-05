@@ -90,3 +90,5 @@ def Multiple_SSr(data, x_cols_name=None, y_col=''):
     Y_trans = Y.transpose()
 
     B_trans = Multiple_Regression(data, x_cols_name=x_cols_name, y_col=y_col).transpose()
+
+    dot_1 = np.dot(Y_trans, Y)
