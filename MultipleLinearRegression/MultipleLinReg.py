@@ -107,3 +107,6 @@ def Variance_Estimator(data, x_cols_name=None, y_col=''):
     :param y_col: column name of the dependent variable
     :return:  numpy.float variance value
     """
+    ssr = Multiple_SSr(data=data, x_cols_name=x_cols_name, y_col=y_col)
+
+
