@@ -157,3 +157,5 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
         ones_X = np.insert(ones_X, i, data[x_cols_name[i - 1]].values, axis=1)
 
     X_trans = ones_X.transpose()
+
+    dot_1 = np.dot(X_trans, ones_X)
