@@ -24,3 +24,6 @@ def Multiple_Regression(data, x_cols_name=None, y_col=''):
     ones_X = ones.reshape(len(data), 1)
 
     X = []
+
+    for i in x_cols_name:
+        X.append(data[i].values)
