@@ -129,3 +129,6 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
     :param y_col: column name of the dependent variable
     :return: Test statistic value (float) and T-table value(float)
     """
+    from scipy.stats import t
+    from math import sqrt
+
