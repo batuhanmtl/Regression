@@ -58,3 +58,5 @@ def Multiple_SSr(data, x_cols_name=None, y_col=''):
     :param y_col: column name of the dependent variable
     :return: numpy.float SSr -the sum of squares of residuals-
     """
+    if x_cols_name is None:
+        x_cols_name = []
