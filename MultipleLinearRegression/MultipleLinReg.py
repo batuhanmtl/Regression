@@ -65,3 +65,5 @@ def Multiple_SSr(data, x_cols_name=None, y_col=''):
 
     for i in range(len(data)):
         ones.append(1.0)
+
+    ones = np.array(ones)
