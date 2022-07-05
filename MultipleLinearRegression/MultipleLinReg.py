@@ -109,4 +109,6 @@ def Variance_Estimator(data, x_cols_name=None, y_col=''):
     """
     ssr = Multiple_SSr(data=data, x_cols_name=x_cols_name, y_col=y_col)
 
+    n = len(data)  # number of observations
+
 
