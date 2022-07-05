@@ -98,5 +98,12 @@ def Multiple_SSr(data, x_cols_name=None, y_col=''):
 
     return ssr[0, 0]
 
-def Variance_Estimator(data, x_cols_name=None, y_col=''):
 
+def Variance_Estimator(data, x_cols_name=None, y_col=''):
+    """
+    Function that estimates the variance using the sum of the squares of the residuals.
+    :param data: must be a data frame
+    :param x_cols_name: must be a list with column names of non-dependent Variables.
+    :param y_col: column name of the dependent variable
+    :return:  numpy.float variance value
+    """
