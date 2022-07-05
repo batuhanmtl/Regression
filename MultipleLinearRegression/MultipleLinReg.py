@@ -188,4 +188,12 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
 
     return test_stat, t_table
 
+
 def Multiple_R2(data, x_cols_name=None, y_col=''):
+    """
+    Method for measuring the amount of reduction in the sum of the squares of the residuals
+    :param data: must be a data frame
+    :param x_cols_name: must be a list with column names of non-dependent Variables.
+    :param y_col: column name of the dependent variable
+    :return: float value of R2
+    """
