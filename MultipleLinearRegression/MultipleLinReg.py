@@ -197,3 +197,5 @@ def Multiple_R2(data, x_cols_name=None, y_col=''):
     :param y_col: column name of the dependent variable
     :return: float value of R2
     """
+    Y = data[y_col].values
+
