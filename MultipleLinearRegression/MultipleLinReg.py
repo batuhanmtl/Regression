@@ -163,3 +163,5 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
     dot_1_inv = np.linalg.inv(dot_1)
 
     index_var = x_cols_name.index(variable_name)
+
+    index_x = dot_1_inv[index_var + 1, index_var + 1]
