@@ -39,3 +39,6 @@ def Multiple_Regression(data, x_cols_name=None, y_col=''):
     Y = data[y_col].values
     Y = np.array(Y)
     Y = Y.reshape(len(data), 1)
+
+    dot_1 = np.dot(X_trans, ones_X)  # matrix of X'X
+    dot_2 = np.dot(X_trans, Y)  # matrix of X'Y
