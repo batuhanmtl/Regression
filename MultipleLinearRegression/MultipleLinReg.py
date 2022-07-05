@@ -149,3 +149,7 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
     for i in x_cols_name:
         X.append(data[i].values)
 
+    X = np.array(X)
+
+    X = X.transpose()
+
