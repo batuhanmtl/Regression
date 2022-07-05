@@ -42,3 +42,5 @@ def Multiple_Regression(data, x_cols_name=None, y_col=''):
 
     dot_1 = np.dot(X_trans, ones_X)  # matrix of X'X
     dot_2 = np.dot(X_trans, Y)  # matrix of X'Y
+
+    dot_1_inv = np.linalg.inv(dot_1)  # inverse matrix of X'X
