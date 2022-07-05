@@ -60,3 +60,5 @@ def Multiple_SSr(data, x_cols_name=None, y_col=''):
     """
     if x_cols_name is None:
         x_cols_name = []
+
+    ones = []
