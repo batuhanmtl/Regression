@@ -178,3 +178,5 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
 
     t_table = t.ppf(q=alpha / 2, df=n - k - 1)
 
+    print(f'test-stat={test_stat} t-table={t_table}')
+
