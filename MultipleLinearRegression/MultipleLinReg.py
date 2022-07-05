@@ -35,3 +35,7 @@ def Multiple_Regression(data, x_cols_name=None, y_col=''):
         ones_X = np.insert(ones_X, i, data[x_cols_name[i - 1]].values, axis=1)
 
     X_trans = ones_X.transpose()
+
+    Y = data[y_col].values
+    Y = np.array(Y)
+    Y = Y.reshape(len(data), 1)
