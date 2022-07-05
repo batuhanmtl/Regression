@@ -115,5 +115,7 @@ def Variance_Estimator(data, x_cols_name=None, y_col=''):
 
     variance_est = ssr / (n - k - 1)  # Variance estimator value
 
+    return variance_est
+
 
 
