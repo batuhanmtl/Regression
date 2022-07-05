@@ -132,3 +132,6 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
     from scipy.stats import t
     from math import sqrt
 
+    if x_cols_name is None:
+        x_cols_name = []
+
