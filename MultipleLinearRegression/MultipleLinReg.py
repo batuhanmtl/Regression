@@ -117,5 +117,6 @@ def Variance_Estimator(data, x_cols_name=None, y_col=''):
 
     return variance_est
 
+def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_col=''):
 
 
