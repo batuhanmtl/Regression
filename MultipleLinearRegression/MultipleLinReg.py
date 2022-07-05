@@ -137,3 +137,6 @@ def Coef_Hypot(data, alpha=0.05, beta=0, variable_name='', x_cols_name=None, y_c
 
     ones = []
 
+    for i in range(len(data)):
+        ones.append(1.0)
+
