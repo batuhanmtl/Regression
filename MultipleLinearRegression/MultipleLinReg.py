@@ -46,3 +46,5 @@ def Multiple_Regression(data, x_cols_name=None, y_col=''):
     dot_1_inv = np.linalg.inv(dot_1)  # inverse matrix of X'X
 
     B = np.dot(dot_1_inv, dot_2)  # beta coefficients matrix
+
+    return B
