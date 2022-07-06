@@ -38,3 +38,6 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     x_trans = x.transpose()
 
     X = []
+
+    for i in x_cols_name:
+        X.append(data[i].values)
