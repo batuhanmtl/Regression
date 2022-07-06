@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from scipy.stats import t
-from LinearRegression.MultipleLinearRegression import Multiple_SSr, Multiple_Regression
+from MultipleLinearRegression.MultipleLinReg import Multiple_SSr,Multiple_R2,Multiple_Regression
 from math import sqrt as sq
 
 
@@ -45,7 +45,7 @@ def Interval(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
 
     X = np.array(X)
 
-    X = X.transpose()  # variable values matrix
+    X.transpose()
 
     for i in range(1, len(x_cols_name) + 1):
         ones_X = np.insert(ones_X, i, data[x_cols_name[i - 1]].values, axis=1)

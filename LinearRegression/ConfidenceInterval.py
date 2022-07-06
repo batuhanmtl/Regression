@@ -1,8 +1,6 @@
 from scipy.stats import t  # for Values of critical points in T_table
-from LinearRegression.RegressionParameters import *
+
 from LinearRegression.CoefHypoTest import *
-import math as mt
-import numpy as np
 
 
 def B_Conf_Interval(x, y, alpha):
@@ -66,6 +64,8 @@ def A_Conf_Interval(x, y, alpha):
 
     limit_1 = A(x, y) - mt.sqrt(sum * ssr / (n * (n - 2) * sxx)) * T_table_value
     limit_2 = A(x, y) + mt.sqrt(sum * ssr / (n * (n - 2) * sxx)) * T_table_value
+
+    interval = [limit_1, limit_2]
 
     if limit_1 > limit_2:
         interval[0] = limit_2
