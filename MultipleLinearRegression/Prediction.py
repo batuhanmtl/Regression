@@ -68,3 +68,6 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     t_table_value = t.ppf(q=alpha / 2, df=n - k - 1)
 
     sum_xb = 0
+
+    for i in range(len(x_cols_name)):
+        sum_xb += x[i] * b[i, 0]
