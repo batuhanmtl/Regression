@@ -62,3 +62,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     k = len(x_cols_name)
 
     ssr = Multiple_SSr(data=data, x_cols_name=x_cols_name, y_col=y_col)
+
+    b = Multiple_Regression(data=data, x_cols_name=x_cols_name, y_col=y_col)
