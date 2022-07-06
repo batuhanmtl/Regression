@@ -25,3 +25,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     ones = np.array(ones)
 
     ones_X = ones.reshape(len(data), 1)
+
+    x = [1]
