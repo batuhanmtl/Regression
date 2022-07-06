@@ -14,3 +14,7 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     :param y_col: column name of the dependent variable
     :return: float: lower limit , f;oat:upper limit
     """
+    if x_value is None:
+        x_value = []
+
+    ones = []
