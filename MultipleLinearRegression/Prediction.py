@@ -41,3 +41,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
 
     for i in x_cols_name:
         X.append(data[i].values)
+
+    X = np.array(X)
