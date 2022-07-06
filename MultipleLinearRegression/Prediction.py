@@ -27,3 +27,6 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     ones_X = ones.reshape(len(data), 1)
 
     x = [1]
+
+    for i in range(len(x_cols_name)):
+        x.append(x_value[i])
