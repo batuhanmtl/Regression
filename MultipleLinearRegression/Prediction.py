@@ -71,3 +71,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
 
     for i in range(len(x_cols_name)):
         sum_xb += x[i] * b[i, 0]
+
+    limit_1 = sum_xb - sq(ssr / (n - k - 1)) * sq(dot_2) * t_table_value
