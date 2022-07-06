@@ -5,4 +5,12 @@ from LinearRegression.MultipleLinearRegression import Multiple_SSr, Multiple_Reg
 from math import sqrt as sq
 
 def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
-
+    """
+    Confidence interval estimator for E[Y|x] when x_ 0 =1
+    :param alpha: significance level
+    :param x_value: x variable values for interval
+    :param data: must be a data frame
+    :param x_cols_name: must be a list with column names of non-dependent Variables.
+    :param y_col: column name of the dependent variable
+    :return: float: lower limit , f;oat:upper limit
+    """
