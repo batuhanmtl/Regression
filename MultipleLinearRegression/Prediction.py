@@ -66,3 +66,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     b = Multiple_Regression(data=data, x_cols_name=x_cols_name, y_col=y_col)
 
     t_table_value = t.ppf(q=alpha / 2, df=n - k - 1)
+
+    sum_xb = 0
