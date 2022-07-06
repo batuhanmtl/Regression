@@ -54,3 +54,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     dot_1 = np.dot(X_trans, ones_X)  # matrix of X'X
 
     dot_1_inv = np.linalg.inv(dot_1)  # inverse matrix of X'X
+
+    dot_2 = x_trans.dot(dot_1_inv).dot(x)  # matrix of x'(X'X)^-1x
