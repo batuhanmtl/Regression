@@ -4,6 +4,7 @@ from scipy.stats import t
 from LinearRegression.MultipleLinearRegression import Multiple_SSr, Multiple_Regression
 from math import sqrt as sq
 
+
 def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     """
     Confidence interval estimator for E[Y|x] when x_ 0 =1
@@ -78,3 +79,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
 
     if limit_1 > limit_2:
         return limit_2[0], limit_1[0]
+
+    return limit_1[0], limit_2[0]
