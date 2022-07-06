@@ -45,3 +45,6 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     X = np.array(X)
 
     X = X.transpose()  # variable values matrix
+
+    for i in range(1, len(x_cols_name) + 1):
+        ones_X = np.insert(ones_X, i, data[x_cols_name[i - 1]].values, axis=1)
