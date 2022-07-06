@@ -5,7 +5,7 @@ from LinearRegression.MultipleLinearRegression import Multiple_SSr, Multiple_Reg
 from math import sqrt as sq
 
 
-def IntervalPredict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
+def Interval(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     """
     Confidence interval estimator for E[Y|x] when x_ 0 =1
     :param alpha: significance level
