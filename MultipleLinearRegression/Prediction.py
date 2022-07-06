@@ -36,3 +36,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     x = x.reshape(len(x_cols_name) + 1, 1)
 
     x_trans = x.transpose()
+
+    X = []
