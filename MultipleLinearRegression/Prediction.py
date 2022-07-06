@@ -30,3 +30,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
 
     for i in range(len(x_cols_name)):
         x.append(x_value[i])
+
+    x = np.array(x)
