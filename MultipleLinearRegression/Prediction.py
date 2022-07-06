@@ -58,3 +58,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
     dot_2 = x_trans.dot(dot_1_inv).dot(x)  # matrix of x'(X'X)^-1x
 
     n = len(data)
+
+    k = len(x_cols_name)
