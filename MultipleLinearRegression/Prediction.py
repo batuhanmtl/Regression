@@ -18,3 +18,6 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
         x_value = []
 
     ones = []
+
+    for i in range(len(data)):
+        ones.append(1.0)
