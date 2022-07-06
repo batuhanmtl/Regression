@@ -32,3 +32,5 @@ def Predict(data, alpha=0.05, x_cols_name=None, y_col='', x_value=None):
         x.append(x_value[i])
 
     x = np.array(x)
+
+    x = x.reshape(len(x_cols_name) + 1, 1)
